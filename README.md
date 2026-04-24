@@ -16,22 +16,23 @@ This logo is trademarked and the property of the Open Home Foundation. This mean
 
 ## Structure
 
-Each brand directory contains files for print (eps, pdf) and screens (png, svg):
+Each brand directory groups assets by type (currently `logo/`, with room for more in future). Logos are provided for print (eps, pdf) and screens (png, svg):
 
 ```
 {brand}/
-├── print
-    ├── lockup
-        ├── inline
-        ├── main
-        └── stacked
-    └── logomark
-├── screen
-    ├── lockup
-        ├── inline
-        ├── main
-        └── stacked
-    └── logomark
+└── logo
+    ├── print
+    │   ├── lockup
+    │   │   ├── inline
+    │   │   ├── main
+    │   │   └── stacked
+    │   └── logomark
+    └── screen
+        ├── lockup
+        │   ├── inline
+        │   ├── main
+        │   └── stacked
+        └── logomark
 ```
 
 ## Naming Convention
@@ -44,8 +45,8 @@ All files follow: `{brand}-{type}-{variant}-{theme}-{background}.{ext}`
 - **Background**: `on-dark` (for dark backgrounds), `on-bright` (for bright backgrounds)
 
 Examples:
-- `open-home-foundation/print/logomark/OHF-mark-color-on-bright-cmyk.eps`
-- `home-assistant/screen/lockup/HA-lockup-main-color-on-dark.png`
+- `open-home-foundation/logo/print/logomark/OHF-mark-color-on-bright-cmyk.eps`
+- `home-assistant/logo/screen/lockup/HA-lockup-main-color-on-dark.png`
 
 ## Adding a New Brand
 
