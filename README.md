@@ -49,6 +49,19 @@ Examples:
 - `open-home-foundation/logo/print/logomark/OHF-mark-color-on-light-cmyk.eps`
 - `home-assistant/logo/screen/lockup/HA-lockup-main-color-on-dark.png`
 
+## Print files
+
+Print files are generated from the screen SVGs, never made by hand. `print/build.py` turns `{brand}/logo/screen/…/NAME.svg` into `{brand}/logo/print/…/NAME-cmyk.pdf` (PDF/X-4, ISO Coated v2 300% (ECI)) and `NAME-cmyk.eps`. Colours are mapped exactly using `print/colors.json`, and the build fails on any colour that isn't listed there.
+
+```bash
+brew install librsvg ghostscript poppler
+python3 -m venv print/.venv && print/.venv/bin/pip install -r print/requirements.txt
+print/.venv/bin/python print/build.py     # build all print files
+print/.venv/bin/python print/verify.py    # check them and compare with HEAD
+```
+
+In Claude Code, the `print-files` skill (`.claude/skills/print-files/`) runs these steps and reports what changed.
+
 ## Adding a New Brand
 
 1. Create a directory using the brand's kebab-case name (e.g., `my-project/`).

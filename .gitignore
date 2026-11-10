@@ -10,3 +10,8 @@ desktop.ini
 
 # Build output
 dist/
+
+# Print build
+print/.venv/
+print/profiles/
+__pycache__/

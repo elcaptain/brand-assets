@@ -1,0 +1,20 @@
+{
+  "_comment": "Exact sRGB hex -> CMYK (percent) mapping for print files. Source: marketing machine colour guidelines. Any colour used in a logo SVG that is not listed here makes the build fail.",
+  "colors": {
+    "#18BCF2": { "cmyk": [65, 3, 0, 0],      "name": "Bright blue" },
+    "#09202E": { "cmyk": [100, 44, 10, 91],  "name": "OHF dark blue" },
+    "#F7F6F2": { "cmyk": [4, 3, 5, 0],       "name": "OHF off-white" },
+    "#1D2126": { "cmyk": [76, 65, 66, 90],   "name": "Dark grey" },
+    "#F2F4F9": { "cmyk": [4, 2, 0, 0],       "name": "Light grey" },
+    "#FFFFFF": { "cmyk": [0, 0, 0, 0],       "name": "White (monochrome on-dark, no ink)" },
+    "#000000": { "cmyk": [0, 0, 0, 100],     "name": "Black (monochrome on-light)" }
+  },
+  "output_intent": {
+    "profile": "profiles/ISOcoated_v2_300_eci.icc",
+    "profile_md5": "e14f5db955711d914d877df35ad7a1b5",
+    "info": "ISO Coated v2 300% (ECI)",
+    "output_condition_identifier": "FOGRA39",
+    "output_condition": "Offset printing, ISO 12647-2:2004/Amd 1, paper type 1 or 2 (coated), 300% TAC",
+    "registry_name": "http://www.color.org"
+  }
+}
